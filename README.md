@@ -1,0 +1,2 @@
+# Python
+Apunts de Python
