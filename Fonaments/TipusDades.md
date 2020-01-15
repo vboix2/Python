@@ -166,6 +166,36 @@ L'operador replicació `*` s'aplica a una cadena de text i un nombre enter, reto
 "a" * 3     # aaa
 ```
 
+**Operadors de bits**
+
+Existeixen quatre operadors que permeten manipular bits d'informació (*bitwise operators*).
+
+* `&` - conjunció (AND)
+* `|` - disjunció (OR)
+* `~` - negació (NOT)
+* `^` - disjunció exclusiva (XOR)
+
+Aquests operadors només poden treballar amb enters i actuen sobre cada bit de manera independent.
+Això vol dir que el resultat de l'operació entre dos enters serà l'enter que correspon a la seqüència de bits obtinguda
+en aplicar l'operador sobre cada parella de bits situats a la mateixa posició.
+
+```python
+i = 15  # 00000000000000000000000000001111
+j = 22  # 00000000000000000000000000010110
+i & j   # 00000000000000000000000000000110  (6)
+i | j   # 00000000000000000000000000011111  (31)
+~ i     # 11111111111111111111111111110000  (-16)
+i ^ j   # 00000000000000000000000000011001  (25)
+```
+
+Una altra possible operació a nivell de bits és el desplaçament de bit (*shifting).
+L'operador `>>` desplaça els bits a la dreta i `<<` desplaça els bits a l'esquerra.
+```python
+n = 8   # 000000000000000000000000000001000
+n >> 1  # 000000000000000000000000000000100 (4)
+n << 2  # 000000000000000000000000000100000 (32)
+```
+
 ## Variables
 
 Per crear una variable només cal assignar-li un valor amb l'operador `=`.
@@ -193,6 +223,8 @@ x /= 2  # x = x / 2
 x %= 2  # x = x % 2
 x **= 2 # x = x ** 2
 ```
+
+Els operadors de bits també admeten la representació abreviada: `&=`, `|=`, `~=` i `^=`.
 
 ## Comentaris
 
