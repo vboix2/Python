@@ -4,9 +4,11 @@
 
 * [Introducció](Fonaments/Introduccio.md)
 * [Tipus de dades: literals, operadors i variables](Fonaments/TipusDades.md)
+* [Flux de control](Fonaments/Flux.md)
+* [Col·leccions](Fonaments/Colleccions.md)
 * [Entrada i sortida de dades]
 
-## Llibreria estàndard
+## Llibreries estàndard
 
 ## Llibreries científiques
 
