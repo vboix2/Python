@@ -169,19 +169,30 @@ L'operador replicació `*` s'aplica a una cadena de text i un nombre enter, reto
 ## Variables
 
 Per crear una variable només cal assignar-li un valor amb l'operador `=`.
-El nom de la variable ha de desriure el seu contingut i només pot contenir lletres, nombres i '_'; a més,
-no pot començar amb un nombre i diferencia majúscules de minúscules.
+
 ```python
 text = "cadena de text"
 nombre_enter = 15
 nombre_decimal = 5.7
 binari = True
 ```
-
-El nom de la variable tampoc no pot utilitzar les paraules reservades `False`, `True`, `None`, `and`, `del`,
+El nom de la variable només pot contenir lletres majúscules, minúscules, nombres i '_', no pot començar amb un nombre i 
+tampoc no pot utilitzar les paraules reservades `False`, `True`, `None`, `and`, `del`,
 `from`, `not`, `while`, `as`, `elif`, `global`, `or`, `with`, `assert`, `else`, `if`, `pass`, `yield`, `break`, 
 `except`, `import`, `print`, `class`, `exec`, `in`, `raise`, `continue`, `finally`, `is`, `return`, `def`, `for`,
 `lambda` i `try`.
+
+L'assignació d'un valor a una variable pot fer-se a partir del valor anterior de la pròpia variable.
+Per fer aquesta reassignació poden utilitzar-se els *shortcut operators*:
+```python
+x = 0
+x += 2  # x = x + 2
+x -= 2  # x = x - 2
+x *= 2  # x = x * 2
+x /= 2  # x = x / 2
+x %= 2  # x = x % 2
+x **= 2 # x = x ** 2
+```
 
 ## Comentaris
 
