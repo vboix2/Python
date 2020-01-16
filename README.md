@@ -5,8 +5,9 @@
 * [Introducció](Fonaments/Introduccio.md)
 * [Tipus de dades: literals, operadors i variables](Fonaments/TipusDades.md)
 * [Flux de control](Fonaments/Flux.md)
-* [Col·leccions](Fonaments/Colleccions.md)
-* [Entrada i sortida de dades]
+* [Entrada i sortida de dades](Fonaments/ESDades.md)
+* Col·leccions: [Llistes](Fonaments/Llistes.md) i [Diccionaris]
+* [Funcions](Fonaments/Funcions.md)
 
 ## Llibreries estàndard
 
