@@ -1,6 +1,12 @@
 # Flux de control
 
-## Estructura seqüencial
+* [Estructura seqüencial](#estructura-seqencial)
+* [Comparadors](#comparadors)
+* [Condicionals: if, elif i else](#condicionals-if-elif-else)
+* [Repetició condicionada: while](#repetici-condicionada-while)
+* [Repetició controlada: for](#repetici-controlada-for)
+
+### Estructura seqüencial
 
 Les instruccions se separen sempre amb un salt de línia.
 Excepcionalment, poden posar-se dues instruccions en una mateixa línia separades per `;`.
@@ -16,7 +22,7 @@ c = a + b    # instrucció 3
 L'agrupament d'instruccions es realitza amb la identació; això vol dir que les instruccions s'agrupen en funció de la seva
 separació amb el marge esquerra.
 
-## Comparadors
+### Comparadors
 
 Permeten avaluar si una expressió és certa (`True`) o falsa (`False`).
 Són els següents:
@@ -39,7 +45,7 @@ not a != b
 ```
 
 
-## Condicionals: if, elif, else
+### Condicionals: if, elif, else
 
 Podem condicionar l'execució d'una instrucció al resultat d'una comparació utilitzant la paraula `if`.
 
@@ -85,7 +91,7 @@ else: print("'a' és més petit que 'b'")
 
 La sentència switch no existeix en Python, s'implementa amb un diccionari.
 
-## Repetició condicionada: while
+### Repetició condicionada: while
 
 Aquest tipus d'expressions també avaluen una condició, però repeteixen totes les instruccions que es troben al seu interior mentre es cumpleixi la condició. 
 Per construir-les utilitzem la paraula `while`.
@@ -128,7 +134,7 @@ else:
     print("else",i)
 ```
 
-## Repetició controlada: for
+### Repetició controlada: for
 
 Aquesta expressió permet repetir un conjunt d'instruccions per a tots els valors possibles d'una variable de control.
 
