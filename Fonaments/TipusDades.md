@@ -1,5 +1,10 @@
 # Tipus de dades
 
+* [Literals](#literals)
+* [Operadors](#operadors)
+* [Variables](#variables)
+* [Comentaris](#comentaris)
+
 ## Literals
 
 **Nombres enters**
@@ -61,7 +66,7 @@ u"Cadena en unicode"
 r"Cadena en text cru"  # Evita els caràcters d'escapada 
 ```
 
-### Conversió de tipus
+**Conversió de tipus**
 
 Disposem de diferents mètodes per avaluar o modificar el tipus de dades.
 
@@ -211,6 +216,17 @@ tampoc no pot utilitzar les paraules reservades `False`, `True`, `None`, `and`, 
 `from`, `not`, `while`, `as`, `elif`, `global`, `or`, `with`, `assert`, `else`, `if`, `pass`, `yield`, `break`, 
 `except`, `import`, `print`, `class`, `exec`, `in`, `raise`, `continue`, `finally`, `is`, `return`, `def`, `for`,
 `lambda` i `try`.
+
+Podem fer múltiples assignacions en una sola línia.
+```python
+a,b,c = 'text', 15, True
+``` 
+
+També podem intercanviar el valor de dues variables en una sola línia.
+```python
+a = 1; b = 2;
+a, b = b, a     # a = 2 i b = 1
+```
 
 L'assignació d'un valor a una variable pot fer-se a partir del valor anterior de la pròpia variable.
 Per fer aquesta reassignació poden utilitzar-se els *shortcut operators*:
