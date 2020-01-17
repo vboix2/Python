@@ -1,8 +1,13 @@
-# Llistes
+# Col·leccions
 
-### Declaració
+* [Llistes i tuples](#llistes-i-tuples)
+* [Diccionaris](#diccionaris)
 
-Les llistes són variables que permeten emmagatzemar vàries dades de tipus diferents.
+### Llistes i tuples
+
+**Definició**
+
+Les **llistes** són variables que permeten emmagatzemar vàries dades de tipus diferents de manera ordenada.
 Es declaren utilitzant `[]` i els seus valors se separen per `,`.
 Per accedir a un valor s'utilitza la seva posició, començant per 0.
 
@@ -26,15 +31,17 @@ a[0] = 2
 print(b[0])     # 2
 ```
 
-Les **tuples** també permeten emmagatzemar dades diferents, com una llista, però no es poden modificar.
+Les **tuples** també permeten emmagatzemar dades diferents de manera ordenada (com una llista) però no es poden modificar, són immutables.
 Es declaren utilitzant `()`, però s'hi accedeix com a una llista.
+Per crear una tupla buida podem utilitzar `()`, però per crear una llista d'un sol element hem de fer `(1,)` per 
+indicar que no és un literal.
 
 ```python
 tupla = ('text', 124, False, 5.9)
 tupla[0]  # Primer element
 ```
 
-### Creació de llistes
+**Creació de llistes**
 
 La funció `list()` permet crear un llista a partir d'altres tipus de dades.
 ```python
@@ -64,7 +71,7 @@ llista = cadena.split('-')  # ["a","b","c"]
 cadena = '-'.join(llista)   # "a-b-c"
 ```
 
-### Funcions
+**Funcions**
 
 Avaluen un resultat a partir d'una llista.
 
@@ -94,7 +101,7 @@ a = [1,2,3,4,5]
 del a[1]        # [1,3,4,5]
 ```
 
-### Mètodes
+**Mètodes**
 
 Actuen sobre la llista modificant els seus valors o propietats.
 
@@ -132,9 +139,9 @@ a.sort()
 print(a)    # [2,4,5,7]
 ```
 
-### Slice
+**Slice**
 
-La tècnica del **slice** permet fer una còpia d'una llista o d'una part d'ella; 
+La tècnica del *slice* permet fer una còpia d'una llista o d'una part d'ella; 
 això vol dir que quan s'assigna a una nova variable no es copia l'adreça de la llista sinó tot o part del seu contingut.
 
 Característiques:
@@ -164,7 +171,7 @@ del a[1:5]
 print(a)    # [0,5,6]
 ```
 
-### Operadors
+**Operadors**
 
 * `in` - Avalua si un element es troba a la llista. Retorna `True` si hi és i `False` si no hi és.
 ```python
@@ -177,7 +184,7 @@ llista = [3,8,5,10]
 5 not in llista         # False
 ```
 
-### Matrius
+**Matrius**
 
 Una matriu és una llista de llistes i pot representar-se com una taula de dades.
 Per obtenir una fila podem fer `matriu[fila]` i per accedir a un element `matriu[fila][columna]`.
@@ -195,3 +202,83 @@ Podem generar matrius utilitzant les llistes per comprensió.
 #  [2, 3, 4]]
 ```
 
+## Diccionaris
+
+**Definició**
+
+Els diccionaris permeten emmagatzemar dades que es consulten a partir d'una clau.
+Les claus han de ser totes del mateix tipus de dades i no es poden repetir.
+A diferència de les llistes, les dades no s'emmagatzemen seguint un ordre.
+
+Per definir un diccionari s'utilitza la sintaxi següent:
+```python
+# Definició
+prefixos = {93:'Barcelona', 972:'Girona', 977:'Tarragona', 973:'Lleida'}
+# Consulta
+prefixos[93]    # Barcelona
+```
+
+Les dades es poden consultar indicant la clau entre `[]`.
+Si es fa una assignació sobre una clau ja existent se substituirà el valor antic pel nou.
+En canvi, si es fa una assignació sobre una clau que no existeix s'afegiran la clau i el valor.
+```python
+prefixos = {93:'Barcelona', 972:'Girona', 977:'Tarragona'}
+# consulta
+prefixos[93]    # Barcelona
+# canvi de valor
+prefixos[977] = "Reus"
+# nova clau
+prefixos[973] = "Lleida"
+```
+
+Per eliminar una clau utilitzem la paraula `del`.
+```python
+prefixos = {93:'Barcelona', 972:'Girona', 977:'Tarragona'}
+del prefixos[977]
+```
+
+**Operadors**
+
+Els operadors `in` i `not in` permeten saber si una clau es troba al diccionari.
+```python
+# Definició
+prefixos = {93:'Barcelona', 972:'Girona', 977:'Tarragona', 973:'Lleida'}
+# Consulta
+93 in prefixos      # True
+977 not in prefixos # False
+```
+
+**Iteració**
+
+Si volem obttenir tots els valors d'un diccionari podem utilitzar el mètode `keys()`.
+Aquest mètode retorna una llista amb totes les claus del diccionari i permet iterar sobre elles.
+```python
+prefixos = {93:'Barcelona', 972:'Girona', 977:'Tarragona', 973:'Lleida'}
+# iteració
+for codi in prefixos.keys():
+    print("codi: ", codi, " província: ", prefixos[codi])
+```
+
+Una altra possibilitat és utilitzar el mètode `items()`, que retorna una llista de tuples (clau, valor).
+```python
+prefixos = {93:'Barcelona', 972:'Girona', 977:'Tarragona', 973:'Lleida'}
+# iteració
+for codi,prefix in prefixos.items():
+    print("codi: ", codi, " província: ", prefix)
+```
+
+Finalment, disposem del mètode `values()` que retorna una llista de tots els valors del diccionari.
+```python
+prefixos = {93:'Barcelona', 972:'Girona', 977:'Tarragona', 973:'Lleida'}
+# iteració
+for provincia in prefixos.values():
+    print("província: ", provincia)
+```
+
+**Funcions**
+
+* `len()` - retorna la longitud del diccionari, el nombre de claus
+```python
+prefixos = {93:'Barcelona', 972:'Girona', 977:'Tarragona', 973:'Lleida'}
+len(prefixos)   # 4
+```

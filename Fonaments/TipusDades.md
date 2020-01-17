@@ -66,6 +66,10 @@ u"Cadena en unicode"
 r"Cadena en text cru"  # Evita els caràcters d'escapada 
 ```
 
+**None**
+
+El literal `None` representa l'absència de valor.
+
 **Conversió de tipus**
 
 Disposem de diferents mètodes per avaluar o modificar el tipus de dades.
@@ -241,6 +245,18 @@ x **= 2 # x = x ** 2
 ```
 
 Els operadors de bits també admeten la representació abreviada: `&=`, `|=`, `~=` i `^=`.
+
+Una variable només pot utilitzar-se dins del context on s'ha declarat.
+Si volem utilitzar-la a qualsevol lloc del codi hem de declarar-la com a global utilitzant la paraula `global`.
+```python
+global c
+c = 3e8
+```
+
+Podem declarar més d'una variable global separant-les per `,`.
+```python
+global a, b, c
+```
 
 ## Comentaris
 

@@ -6,7 +6,7 @@ Python és un llenguatge de programació creat l'any 1999 per Guido van Rossum.
 El seu creador va definir quatre objectius per a aquest llenguatge:
 
 * llenguatge fàcil i intuïtiu, però tan potent com la resta de competidors
-* codi obert de manera que qualsevol pugui contribuir al seu desenvolupament
+* codi obert, de manera que qualsevol pugui contribuir al seu desenvolupament
 * fàcilment comprensible
 * adequat per a tasques quotidianes, permetent un temps de desenvolupament ràpid
 

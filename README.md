@@ -1,17 +1,17 @@
 # Apunts de Python
 
-## Fonaments
+### Fonaments
 
 * [Introducció](Fonaments/Introduccio.md)
 * [Tipus de dades: literals, operadors i variables](Fonaments/TipusDades.md)
 * [Flux de control](Fonaments/Flux.md)
 * [Entrada i sortida de dades](Fonaments/ESDades.md)
-* Col·leccions: [Llistes](Fonaments/Llistes.md) i [Diccionaris]
+* [Col·leccions: Llistes, tuples i diccionaris](Fonaments/Colleccions.md) 
 * [Funcions](Fonaments/Funcions.md)
 
-## Llibreries estàndard
+### Llibreria estàndard
 
-## Llibreries científiques
+### Llibreries científiques
 
-## Recursos
+### Recursos
 
