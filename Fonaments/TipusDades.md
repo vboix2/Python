@@ -3,7 +3,8 @@
 * [Literals](#literals)
 * [Operadors](#operadors)
 * [Variables](#variables)
-* [Comentaris](#comentaris)
+* [Conversió de tipus](#conversi-de-tipus)
+
 
 ## Literals
 
@@ -70,27 +71,6 @@ r"Cadena en text cru"  # Evita els caràcters d'escapada
 
 El literal `None` representa l'absència de valor.
 
-**Conversió de tipus**
-
-Disposem de diferents mètodes per avaluar o modificar el tipus de dades.
-
-La funció `type()` indica el tipus de dades.
-```python
-type('text')
-```
-
-Funcions per a convertir tipus de dades:
-```python
-int("35")       # Converteix a tipus enter
-float("4.6")    # Converteix a tipus float
-str(25)         # Converteix a string
-```
-
-Codificació de caràcters:
-```python
-ord("a")    # Obté el codi ASCII
-chr(55)     # Obté el caràcter del codi
-```
 
 ## Operadors
 
@@ -205,6 +185,7 @@ n >> 1  # 000000000000000000000000000000100 (4)
 n << 2  # 000000000000000000000000000100000 (32)
 ```
 
+
 ## Variables
 
 Per crear una variable només cal assignar-li un valor amb l'operador `=`.
@@ -258,16 +239,26 @@ Podem declarar més d'una variable global separant-les per `,`.
 global a, b, c
 ```
 
-## Comentaris
 
-Els comentaris permeten escriure text descriptiu que no serà interpretat.
+## Conversió de tipus
 
+Disposem de diferents mètodes per avaluar o modificar el tipus de dades.
+
+La funció `type()` indica el tipus de dades.
 ```python
-# Comentari d'una línia
-
-"""
-Comentari
-de vàries
-línies
-"""
+type('text')
 ```
+
+Funcions per a convertir tipus de dades:
+```python
+int("35")       # Converteix a tipus enter
+float("4.6")    # Converteix a tipus float
+str(25)         # Converteix a string
+```
+
+Codificació de caràcters:
+```python
+ord("a")    # Obté el codi ASCII
+chr(55)     # Obté el caràcter del codi
+```
+

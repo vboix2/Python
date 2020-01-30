@@ -4,6 +4,7 @@
 
 * [Introducció](Fonaments/Introduccio.md)
 * [Literals, operadors i variables](Fonaments/TipusDades.md)
+* [Strings i comentaris](Fonaments/Strings.md)
 * [Flux de control](Fonaments/Flux.md)
 * [Entrada i sortida de dades](Fonaments/ESDades.md)
 * [Col·leccions: Llistes, tuples i diccionaris](Fonaments/Colleccions.md) 
