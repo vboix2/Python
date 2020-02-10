@@ -14,7 +14,7 @@
 
 * [Mòduls i paquets](Avançat/Moduls.md)
 * [Excepcions](Avançat/Excepcions.md)
-* [Programació orientada a objectes]
+* [Programació orientada a objectes](Avançat/POO.md)
 * [Expressions regulars]
 
 ### Llibreria estàndard
@@ -29,12 +29,20 @@ Sistema operatiu:
 
 ### Llibreries científiques
 
+Processament i càlcul:
 * [Numpy](LlibCientifiques/Numpy.md)
-* [Matplotlib](LlibCientifiques/Matplotlib.md)
 * [Pandas](LlibCientifiques/Pandas.md)
+
+Anàlisi de dades:
 * [SciPy](LlibCientifiques/SciPy.md)
 
-### Altres
+Anàlisi de dades geoespacials:
+* [GeoPandas](LlibCientifiques/GeoPandas.md)
+
+Visualització de dades:
+* [Matplotlib](LlibCientifiques/Matplotlib.md)
+
+### Altres llibreries
 
 * [Telegram API](Altres/Telegram.md)
 
