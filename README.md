@@ -29,18 +29,12 @@ Sistema operatiu:
 
 ### Llibreries científiques
 
-Processament i càlcul:
 * [Numpy](LlibCientifiques/Numpy.md)
 * [Pandas](LlibCientifiques/Pandas.md)
-
-Anàlisi de dades:
 * [SciPy](LlibCientifiques/SciPy.md)
-
-Anàlisi de dades geoespacials:
+* [Matplotlib](LlibCientifiques/Matplotlib.md)
 * [GeoPandas](LlibCientifiques/GeoPandas.md)
 
-Visualització de dades:
-* [Matplotlib](LlibCientifiques/Matplotlib.md)
 
 ### Altres llibreries
 
