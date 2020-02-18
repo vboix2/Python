@@ -59,8 +59,9 @@ Les llistes poden multiplicar-se i concatenar-se.
 
 Les **llistes per comprensió** permeten crear llistes a partir d'una definició abstracta.
 ```python
-quadrats = [x**2 for x in range(6)]  # [0,1,4,9,16,25]
-senars = [x for x in range(1,10) if x%2!=0]  # [1,3,5,7,9]
+quadrats = [x**2 for x in range(6)]                 # [0,1,4,9,16,25]
+senars = [x for x in range(1,10) if x%2!=0]         # [1,3,5,7,9]
+parells = [1 if x%2==0 else 0 for x in range(6)]   # [1, 0, 1, 0, 1, 0] 
 ```
 
 La funció `split()` crea una llista separant una cadena de text per un caràcter especificat.
