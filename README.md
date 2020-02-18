@@ -15,6 +15,8 @@
 * [Mòduls i paquets](Avançat/Moduls.md)
 * [Excepcions](Avançat/Excepcions.md)
 * [Programació orientada a objectes](Avançat/POO.md)
+* [Iteradors, generadors i funcions lambda](Avançat/Generadors.md)
+* [Accés a fitxers](Avançat/Fitxers.md)
 * [Expressions regulars]
 
 ### Llibreria estàndard
