@@ -9,7 +9,7 @@ del programa, si l'excepció és capturada Python aturarà completament el progr
 Totes les excepcions tenen un nom concret que permet identificar-les i tractar-les correctament, per exemple:
 `ValueError`, `ZeroDivisionError` o `IndexError`.
 
-### Gestió d'excepcions: try, except
+### Gestió d'excepcions: try, except, finally
 
 Els possibles errors que poden produir-se durant l'execució d'un programa es gestionen amb les paraules clau `try` i `except`:
  
@@ -31,6 +31,9 @@ except:
     print("Operació incorrecta!")
 # continuació del codi
 ```
+
+El bloc `finally` se situa després dels blocs `try-except` i s'executa sempre a continuació d'aquests, 
+independentment de si s'ha llençat una excepció.
 
 ### Múltiples excepcions
 
@@ -111,7 +114,7 @@ except:
     print("Problema efectuant la operació")
 ```
 
-### Llençament d'excepcions
+### Llançament d'excepcions
 
 La instrucció `raise` permet llençar excepcions com si s'hagués produït un problema.
 Això permet comprovar el comportament del codi davant d'una excepció i, més endavant, 
@@ -156,7 +159,9 @@ assert x>=0.
 y = math.sqrt(x)
 ```
 
-### Excepcions útils
+### Classes d'excepcions
+
+Algunes excepcions útils són:
 
 * `BaseException` - L'excepció més general, inclou a totes les altres.
     * `AssertionError` - Es llença quan l'expressió d'una sentència `assert` és avaluada com a `False`, `None`, 0 o "".
@@ -171,4 +176,37 @@ y = math.sqrt(x)
         * `StandardError`
             * `ImportError` - Es llença quan falla una importació
 
+Totes les excepcions són classes que s'organitzen en una estructura jeràrquica.
+La classe `BaseException` és l'excepció més general i actua de superclasse de totes les excepcions.
 
+Quan es llença una excepció es crea un objecte de la classe de l'excepció corresponent.
+Per poder treballar amb aquest objecte i obtenir més informació sobre el problema que ha provocat l'excepció podem assignar 
+una variable a aquest objecte amb la paraula reservada `as`.
+```python
+try:
+    #codi
+except Exception as e:
+    print(e.__str__())
+```
+
+### Creació d'excepcions
+
+Per crear una excepció només cal crear una classe que hereti de `Exception` o d'alguna de les seves subclasses.
+```python
+class ExcepcioPersonalitzada(Exception):
+    def __init__(self):
+        self.missatge = "Tenim un problema"
+    def __str__(self):
+        return e.missatge
+
+def funcio(problema):
+    if !problema:
+        pass
+    else:
+        raise ExcepcioPersonalitzada
+
+try:
+    funcio(True)
+except ExcepcioPersonalitzada as e:
+    print(e)
+```
